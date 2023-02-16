@@ -1,15 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - The Parent function of the C program.
+ * main-The parent function of the C program
  *
- * Return: Gives you back your int 0
+ * Return: Gives you back the void 0 you gave it
  */
+
+
 int main(void)
 {
-	printf("Size of a char: %lu byte(s)\n",(unsigned long) sizeof(char));
-	printf("Size of an int: %lu bytes(s)\n",(unsigned long) sizeof(int));
-	printf("Size of a long int: %lu bytes(s)\n",(unsigned long) sizeof(long int));
-	printf("Size of a long long int: %lu bytes(s)\n",(unsigned long)sizeof(long long int));
-	printf("Size of a float: %lu bytes(s)\n",(unsigned long) sizeof(float));
+	char c;
+	int i;
+	long int li;
+	long long int lli;
+	float f;
+
+	printf("Size of a char: %d byte(s)\n", sizeof(c));
+	printf("Size of an int: %d byte(s)\n", sizeof(i));
+	printf("Size of a long int: %d byte(s)\n", sizeof(li));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(lli));
+	printf("Size of a float: %d byte(s)\n", sizeof(f));
 	return (0);
 }
