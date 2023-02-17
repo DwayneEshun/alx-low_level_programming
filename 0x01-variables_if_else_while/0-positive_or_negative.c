@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+#include <stdio.h>
 /**
  * main - The parent function
  *
@@ -16,7 +16,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positive %d \n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
