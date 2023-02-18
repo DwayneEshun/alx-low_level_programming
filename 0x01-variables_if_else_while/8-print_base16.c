@@ -1,27 +1,26 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <ctype.h>
+
 
 /**
- * main - main block
- * Description - Prints all possible
- * combinations of single-digit
- * numbers separated by comma and space.
- * eg 0, 1, 2, 4, 5, 6, 7, 9
+ * main - prints all the numbers
+ * of base 16 in lowercase,
+ * followed by a new line.
  *
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-	int num;
+	int digit;
 
-	for (num = 0; num < 10; num++)
+	for (digit = '0'; digit <= 'F'; digit++)
 	{
-		putchar(num + '0');
-		if (num < 9)
-		{
-		putchar(',');
-		putchar(' ');																	}
+		if (isalnum(digit))
+		{char ch = tolower(digit);
+
+		putchar(ch);
+		}
 	}
 	putchar('\n');
 	return (0);
