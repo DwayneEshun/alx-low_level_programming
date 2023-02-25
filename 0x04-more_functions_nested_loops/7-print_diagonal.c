@@ -11,7 +11,7 @@ void print_diagonal(int n)
 {
 	int slash;
 	int space;
-	
+
 	if (n <= 0)
 	{
 		_putchar('\n');
