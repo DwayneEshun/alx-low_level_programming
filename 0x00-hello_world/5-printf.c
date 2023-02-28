@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Main is the parent function
+ * main - The parent function of our C program
  *
  * Return: Gives you 0 when your'e Sucessful
  */
