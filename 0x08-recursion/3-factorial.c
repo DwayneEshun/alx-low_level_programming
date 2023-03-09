@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * factorial - Returns the factorial of a given number
  * @n : Number to be used
@@ -13,4 +12,3 @@ int factorial(int n)
 		return (1);
 	return (n * factorial(n - 1));
 }
-
